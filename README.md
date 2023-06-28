@@ -15,3 +15,11 @@ Write a FastAPI code [main.py](main.py) to create an API endpoint that receives 
 ## Step 3
 
 Create the [Dockerfile](Dockerfile) to containerize the API.
+
+## Step 4
+
+Run the container
+```bash
+docker build -t diffusion:bark .
+docker run --gpus all -p 8000:8000 diffusion:bark
+```
